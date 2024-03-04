@@ -15,6 +15,8 @@ public class App
         
         CompanyXYZ cmpo=(CompanyXYZ)ctx.getBean("cmp1");
         System.out.println(cmpo);
+       
+        
         
     }
 }
