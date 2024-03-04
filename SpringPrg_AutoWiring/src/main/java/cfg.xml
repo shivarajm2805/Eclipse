@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+<!--  normal wiring
+<bean class="Learning_Spring.SpringPrg_AutoWiring.Car" id="c1">
+<property name="e" ref="e1"></property>
+</bean>
+ -->
+ 
+ <bean class="Learning_Spring.SpringPrg_AutoWiring.Car" id="cr" autowire="byName">
+ </bean>
+
+
+<bean class="Learning_Spring.SpringPrg_AutoWiring.Engine" id="e">
+<property name="egnNo" value="123"></property>
+<property name="type" value="petrol"></property>
+</bean>
+
+<bean class="Learning_Spring.SpringPrg_AutoWiring.Engine" id="e2">
+<property name="egnNo" value="124"></property>
+<property name="type" value="desiel"></property>
+</bean>
+
+
+
+</beans>
