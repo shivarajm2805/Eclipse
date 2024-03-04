@@ -13,6 +13,7 @@ public class App
 //    	
 //    	Engine e2=(Engine)ctx.getBean("e2");
 //    	System.out.println(e2);
+    	///
     	
     	Car e3=(Car)ctx.getBean("cr");
     	System.out.println(e3);
