@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:schemaLocation="http://www.springframework.org/schema/beans
+http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+
+
+
+	<bean class="Learning_4.SpringPrg_Wiring.CompanyXYZ" id="cmp1">
+	
+	<property name="e" ref="emp1"></property>
+	
+	</bean>
+
+	<bean class="Learning_4.SpringPrg_Wiring.Employee" id="emp1">
+		<property name="empid" value="12"></property>
+		<property name="name" value="Shivaraj"></property>
+		<property name="salary" value="550000"></property>
+	
+	</bean>
+	
+	<bean class="Learning_4.SpringPrg_Wiring.Employee" id="emp2">
+		<property name="empid" value="13"></property>
+		<property name="name" value="Rakesh"></property>
+		<property name="salary" value="650000"></property>
+	
+	</bean>
+	
+	
+
+
+</beans>
